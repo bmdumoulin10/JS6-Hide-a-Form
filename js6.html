@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>JS6: Hide-A-Form</title>
+        <link rel='stylesheet' href='styles.css'>
+    </head>
+
+    <body>
+        <form id='form' method='get'>
+            Name:<br>
+            <input type='text' name='inputbox' value=' '><br>
+            Bio:<br>
+            <input type='text' name='inputbox' value=' '><br>
+            Favorite Books:<br>
+            <input type='text' name='inputbox' value=' '><br>
+            Favorite Javascript Libraries:<br>
+            <input type='text' name='inputbox' value=' '><br>
+            <input id='submit' type='submit' value='submit'>
+            <input id='formState' type='submit' value='Hide Form'>
+        </form>
+        
+        <div class="profile">
+            <h1>Your Profile</h1>
+            <p id='display'></p>
+        </div>
+        
+        <script>
+        /*
+        function showText(form){
+            var submitText = form.inputbox.value
+            
+            document.getElementById('display').innerHTML = submitText
+        }
+        
+            function showInput(){
+                var submitText = document.getElementById('submit').value
+                
+                document.getElementById('display').innerHTML = submitText
+            }
+            
+            function showInput(){
+                var form = document.getElementById('form')
+                var inputText = ' '
+            
+                for(var i = 0; i <= 3; i++){
+                    inputText = inputText + form.elements[i].value + '\n'
+                }
+                document.getElementById('display').innerHTML = inputText
+            }
+            */
+        </script>
+    </body>
+
+</html>

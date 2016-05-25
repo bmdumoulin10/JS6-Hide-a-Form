@@ -1,0 +1,38 @@
+*{
+    background: powderblue;
+}
+
+input{
+    background: white;
+    width: 300px;
+}
+
+#submit{
+    width: 125px;
+    margin-top: 20px;
+    background: lightcoral;
+    color: white;
+}
+
+#formState{
+    width: 125px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background: lightcoral;
+    color: white;
+}
+
+.profile{
+    display: block;
+    background: skyblue;
+    border: 1px solid aliceblue;
+    margin: 40px auto;
+    width: 500px;
+    height: 500px;
+}
+
+h1{
+    background: skyblue;
+    text-align: center;
+    font-family: Courier New;
+}
