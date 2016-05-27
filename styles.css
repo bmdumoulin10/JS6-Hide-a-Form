@@ -1,10 +1,11 @@
-*{
+body{
     background: powderblue;
 }
 
-input{
-    background: white;
-    width: 300px;
+textarea{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
 }
 
 #submit{
@@ -12,14 +13,16 @@ input{
     margin-top: 20px;
     background: lightcoral;
     color: white;
+    margin-bottom: 5px;
 }
 
 #formState{
     width: 125px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-right: 5px;
     background: lightcoral;
     color: white;
+    float: right;
 }
 
 .profile{
@@ -28,11 +31,14 @@ input{
     border: 1px solid aliceblue;
     margin: 40px auto;
     width: 500px;
-    height: 500px;
 }
 
 h1{
     background: skyblue;
     text-align: center;
     font-family: Courier New;
+}
+
+form{
+    margin-left: 5px;
 }

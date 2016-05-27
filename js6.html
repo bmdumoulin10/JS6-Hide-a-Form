@@ -7,27 +7,68 @@
     </head>
 
     <body>
-        <form id='form' method='get'>
-            Name:<br>
-            <input type='text' name='inputbox' value=' '><br>
-            Bio:<br>
-            <input type='text' name='inputbox' value=' '><br>
-            Favorite Books:<br>
-            <input type='text' name='inputbox' value=' '><br>
-            Favorite Javascript Libraries:<br>
-            <input type='text' name='inputbox' value=' '><br>
-            <input id='submit' type='submit' value='submit'>
-            <input id='formState' type='submit' value='Hide Form'>
-        </form>
         
         <div class="profile">
+            
             <h1>Your Profile</h1>
-            <p id='display'></p>
+            
+            <form>
+                Name:<br>
+                <textarea id='text1' rows='5'></textarea><br>
+                Bio:<br>
+                <textarea id='text2' rows='5'></textarea><br>
+                Favorite Books:<br>
+                <textarea id='text3' rows='5'></textarea><br>
+                Favorite Javascript Libraries:<br>
+                <textarea id='text4' rows='5'></textarea><br>
+                <input id='submit' type='button' value='Submit'>
+                <input id='formState' type='button' value='Edit Text'>
+            </form>
         </div>
         
         <script>
-        /*
-        function showText(form){
+        
+        var editText = document.getElementById('formState')
+        var submit = document.getElementById('submit')
+        var textArea1 = document.getElementById('text1')
+        var textArea2 = document.getElementById('text2')
+        var textArea3 = document.getElementById('text3')
+        var textArea4 = document.getElementById('text4')
+        var input1 = document.getElementById('text1').value
+        
+        editText.style.visibility = 'hidden'
+// This does not allow me to see the entered text when the text area is hidden
+        submit.onclick = function hideForm(){
+            textArea1.style.visibility = 'hidden'
+            textArea2.style.visibility = 'hidden'
+            textArea3.style.visibility = 'hidden'
+            textArea4.style.visibility = 'hidden'
+            submit.style.visibility = 'hidden'
+            editText.style.visibility = 'visible'
+        }
+        
+        editText.onclick = function hideEditButton(){
+            textArea1.style.visibility = 'visible'
+            textArea2.style.visibility = 'visible'
+            textArea3.style.visibility = 'visible'
+            textArea4.style.visibility = 'visible'
+            submit.style.visibility = 'visible'
+            editText.style.visibility = 'hidden'
+            
+        }
+
+        
+        
+        
+            
+
+
+
+        //editText.style.display = 'none'
+       
+
+        
+/*        function showText(form){
             var submitText = form.inputbox.value
             
             document.getElementById('display').innerHTML = submitText
@@ -48,7 +89,7 @@
                 }
                 document.getElementById('display').innerHTML = inputText
             }
-            */
+*/            
         </script>
     </body>
 
